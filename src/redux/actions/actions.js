@@ -11,3 +11,10 @@ export function addPhoto(post) {
         post
     };
 }
+
+export function addComment(comment) {
+    return {
+        type: 'ADD_COMMENT',
+        comment
+    };
+}

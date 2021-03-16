@@ -8,7 +8,8 @@ import Main from '../main';
 
 function mapStateToProps(state) {
     return {
-        posts: state
+        posts: state.postsReducer,
+        comments: state.commentsReducer
     };
 }
 

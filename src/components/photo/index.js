@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 function Photo(props) {
@@ -6,7 +7,9 @@ function Photo(props) {
 
     return(
         <figure className="figure">
-            <img className="photo" src={post.imageLink} alt={post.description} />
+            <Link to={`/single/${post.id}`}>
+                <img className="photo" src={post.imageLink} alt={post.description} />
+            </Link>
             <figcaption>
                 <p>{post.description}</p>
             </figcaption>

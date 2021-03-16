@@ -3,6 +3,7 @@ import { Link, Route } from 'react-router-dom';
 
 import PhotoWall from '../photoWall';
 import AddPhoto from '../addPhoto';
+import Single from '../single';
 
 function Main(props) {
 
@@ -22,6 +23,9 @@ function Main(props) {
             )} />
             <Route path="/addPhoto" render={({ history }) => (
                 <AddPhoto {...props} />
+            )} />
+            <Route path="/single/:id" render={(params) => (
+                <Single {...props} {...params} />
             )} />
         </section>
     );
