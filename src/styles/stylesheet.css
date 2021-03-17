@@ -138,6 +138,15 @@ body {
     margin: 20px auto;
     border: none;
 }
+
+.backIcon {
+    background: url("https://cdn4.iconfinder.com/data/icons/essential-app-2/16/back-left-arrow-botton-512.png") center no-repeat;
+    background-size: contain;
+    padding: 40px;
+    display: table;
+    margin: 20px auto;
+    border: none;
+}
  
  
 .button-container {

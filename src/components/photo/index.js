@@ -15,10 +15,19 @@ function Photo(props) {
             </figcaption>
             <div className="button-container">
                 <button className="remove-button" onClick={() => {
-                    props.removePhoto(post)
+                    props.removePhoto(post);
+                    props.history.push('/');
                 }}>
                     <span>Remove</span>
                 </button>
+                <Link className="button" to={`/single/${post.id}`}>
+                    <div className="comment-count">
+                        <div className="speech-bubble">
+
+                        </div>
+                        { props.comments[post.id] ? props.comments[post.id].length: 0 }
+                    </div>
+                </Link>
             </div>
         </figure>
     );

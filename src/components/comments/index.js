@@ -13,7 +13,8 @@ function Comments(props) {
             <form className="comment-form" onSubmit={(event) => {
                 event.preventDefault();
                 const comment = event.target.elements.comment.value;
-                props.addComment(comment);
+                props.addComment(comment, props.id);
+                event.target.elements.comment.value = '';
             }}>
                 <input type="text" placeholder="Comments" name="comment" />
                 <input type="submit" />
