@@ -15,7 +15,7 @@ function AddPhoto(props) {
                     };
             
                     if(imageLink && description) {
-                        props.addPhoto(post);
+                        props.startAddingPost(post);
                         props.history.push('/');
                     }
                 }}>

@@ -8,7 +8,7 @@ import Single from '../single';
 function Main(props) {
 
     useEffect(() => {
-        
+        props.startLoadingPosts();
     });
 
     return (
