@@ -19,7 +19,7 @@ function Photo(props) {
                 <p>{post.description}</p>
             </figcaption>
             <div className="button-container">
-                <button className="remove-button" onClick={() => removePhoto()}>
+                <button className="remove-button" onClick={() => removePhoto(props, post)}>
                     <span>Remove</span>
                 </button>
                 <Link className="button" to={`/single/${post.id}`}>
